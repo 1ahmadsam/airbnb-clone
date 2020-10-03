@@ -19,8 +19,8 @@ const Search = () => {
   };
 
   function handleSelect(ranges) {
-    setStartDate(ranges.selectionRange.startDate);
-    setEndDate(ranges.selectionRange.endDate);
+    setStartDate(ranges.selection.startDate);
+    setEndDate(ranges.selection.endDate);
   }
   return (
     <div className='search'>

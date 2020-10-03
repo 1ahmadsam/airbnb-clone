@@ -2,20 +2,21 @@ import React, { useState } from 'react';
 import './Banner.css';
 import { Button } from '@material-ui/core';
 import Search from './Search';
-
 import { useHistory } from 'react-router-dom';
-const Banner = () => {
-  const [showSearch, setShowSearch] = useState(false);
+
+function Banner() {
   const history = useHistory();
+  const [showSearch, setShowSearch] = useState(false);
 
   return (
     <div className='banner'>
       <div className='banner__search'>
         {showSearch && <Search />}
+
         <Button
           onClick={() => setShowSearch(!showSearch)}
-          variant='outlined'
           className='banner__searchButton'
+          variant='outlined'
         >
           {showSearch ? 'Hide' : 'Search Dates'}
         </Button>
@@ -25,12 +26,12 @@ const Banner = () => {
         <h5>
           Plan a different kind of getaway to uncover the hidden gems near you.
         </h5>
-        <Button variant='outlined' onClick={() => history.push('/search')}>
+        <Button onClick={() => history.push('/search')} variant='outlined'>
           Explore Nearby
         </Button>
       </div>
     </div>
   );
-};
+}
 
 export default Banner;

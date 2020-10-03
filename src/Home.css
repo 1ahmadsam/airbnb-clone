@@ -2,3 +2,36 @@
   display: flex;
   padding: 30px;
 }
+.home__experiences {
+  width: 100%;
+  background-color: black;
+  padding: 64px 0px 80px;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.home__container {
+  padding-right: 30px !important;
+  padding-left: 30px !important;
+}
+.home__header {
+  display: flex;
+  justify-content: space-between;
+}
+.home__header > button {
+  background-color: #000;
+  border: 1px solid white;
+  color: white;
+  text-transform: inherit;
+  margin-top: 20px;
+  font-weight: 600;
+}
+.home__header > button:hover {
+  background: rgb(113, 113, 113) !important;
+}
+.home__secondarySection {
+  width: 50%;
+}
+.home__secondarySection > div {
+  padding: 0;
+}

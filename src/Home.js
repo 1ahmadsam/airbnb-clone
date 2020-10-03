@@ -2,6 +2,7 @@ import React from 'react';
 import './Home.css';
 import Banner from './Banner';
 import Card from './Card';
+import { Button } from '@material-ui/core';
 
 const Home = () => {
   return (
@@ -24,6 +25,48 @@ const Home = () => {
           title='Entire homes'
           description='Comfortable private places, with room for friends or family.'
         />
+      </div>
+      <div className='home__experiences'>
+        <div className='home__container'>
+          <div className='home__header'>
+            <div className='home__title'>
+              <h2>Online Experiences: Field Trips</h2>
+              <p>
+                Join interactive, global adventures with inspiring, kid-friendly
+                hosts.
+              </p>
+            </div>
+
+            <Button variant='outlined'>Explore all</Button>
+          </div>
+
+          <div className='home__section'>
+            <Card
+              src='https://a0.muscache.com/im/pictures/4e1d29d2-5148-444d-945d-c278121675a3.jpg?im_w=720'
+              title='Decode the science of 2020 with Bill Nye'
+              inverse
+            />
+            <div className='home__secondarySection'>
+              <div className='home__section'>
+                <Card
+                  src='https://a0.muscache.com/im/pictures/c4975e3c-32c2-4bca-9bc7-25a3e69ea341.jpg?im_w=720'
+                  title='Go on a leopard safari in Sri Lanka'
+                  inverse
+                />
+                <Card
+                  src='https://a0.muscache.com/im/pictures/5d6ee25d-0d8e-472a-b8e7-56bb498b1403.jpg?im_w=720'
+                  title='Discover Buenos Aires street art and sketch'
+                  inverse
+                />
+              </div>
+              <Card
+                src='https://a0.muscache.com/im/pictures/99897df7-97c9-4a14-aa4e-baa5324db825.jpg?im_w=720'
+                title='Dive under the sea with a shark scientist'
+                inverse
+              />
+            </div>
+          </div>
+        </div>
       </div>
       <div className='home__section'>
         <Card

@@ -1,4 +1,8 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# AirBNB Clone APP
+
+### AirBNB clone build using ReactJS with React router, and MaterialUI
+
+![Image of AirBNB-clone](img/airbnb-clone.jpg)
 
 ## Available Scripts
 
